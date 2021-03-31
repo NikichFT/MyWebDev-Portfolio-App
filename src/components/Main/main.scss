@@ -1,0 +1,171 @@
+/* .main{
+
+} */
+
+@mixin display_set($fd) {
+    display: flex;
+    flex-direction: $fd;
+}
+@mixin mainFont($fs, $c) {
+    font-family:'Montserrat', sans-serif;
+    font-size: $fs;
+    color: $c;
+}
+.title{
+    @include mainFont(36px, #FFFFFF);
+    height: 150px;
+}
+.main__head{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    height: 85vh;
+}
+.main__high-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__title{
+    @extend .title;
+}
+.transition{
+    opacity: 1;
+    transition: 1s;
+}
+.logo{
+    width: 230px;
+    height: 200px;
+    margin-left: 30px;
+}
+.main__img{
+    position: relative;
+    width: 180px;
+    height: 200px;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    z-index: 99;
+}
+.hover{
+    transform: scaleX(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.main__logo{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%, #27DDB1 0deg, rgba(39, 221, 177, 0) 360deg);
+    &:hover{@extend .hover;};
+
+    animation: disclosure 2s 0s 1;
+    @keyframes disclosure {
+            0%   { transform: scaleX(0.8);
+                transition: all 0.5s ease-in-out;}
+            50%  { transform: scaleX(1);
+                transition: all 0.5s ease-in-out;}
+            75% { transform: scaleX(0.8);
+                transition: all 0.5s ease-in-out;}
+            100% { transform: scaleX(1);
+                    transition: all 0.5s ease-in-out;}
+        }
+}
+.telegram{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    left: -85px;
+    top: 85px;
+    z-index: 1;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        transition: all 0.5s ease-in-out;
+    }
+}
+.whatsapp{
+    @extend .telegram;
+    left: 85px;
+}
+.main__description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    .skills-title{
+        @include mainFont(36px, #FFFFFF);
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        .skills__item{
+            font-size: 24px;
+            font-family: 'Black Ops One', cursive;
+            color:   rgba(179, 255, 255, 0.897);
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+.main__arrow{
+    display: flex;
+    justify-content: center;
+}
+.arrow {
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-color:  rgba(0, 255, 238, 0.897);
+    border-width: 0px 3px 3px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    cursor: pointer;
+    animation: bounce 2s 0s infinite;
+    @keyframes bounce {
+            0%   { transform: translateY(0) rotate(45deg); }
+            50%  { transform: translateY(-15px) rotate(45deg); }
+            100% { transform: translateY(0) rotate(45deg); }
+        }
+    &:hover {
+        border-bottom-width: 6px;
+        border-right-width: 6px;
+        border-color: white;
+      }
+  }
+  
+  //adaptive
+@media screen and (max-width: 756px){
+    .main__high-area {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo{
+        margin: 0;
+    }
+    .main__description{
+        margin: 0;
+        font-size: 1em;
+    }
+    .main__head{
+        height: 100%;
+    }
+  }
+  

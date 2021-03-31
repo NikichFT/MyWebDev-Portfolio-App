@@ -1,0 +1,40 @@
+.header{
+    height: 80px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    /* background: linear-gradient(180deg, #000000 6.25%, rgba(4, 255, 238, 0.267) 80.73%); */
+    // linear-gradient(180deg, #000000 6.25%, rgba(0, 255, 238, 0.178) 80.73%);
+    // url("./../../Rectangle1.svg");
+    background: linear-gradient(180deg, #66d8a8 8%, rgba(255, 255, 255, 0.178) 50%, rgba(0, 255, 240, 0) 70%);
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 0px 0px 50px 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.header-home_link, .header-projects_link, .header-contacts_link {
+    text-decoration: none;
+    color: #ffffff;
+    &:hover{
+        transition: 0.3s;
+        color: aqua;
+    }
+}
+.header-home{
+    margin-right: 30%;
+}
+/* // .header-about{
+
+// }
+// .header-contacts{
+
+// } */
+/* .header__logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    background-position: 40% 100%;
+} */

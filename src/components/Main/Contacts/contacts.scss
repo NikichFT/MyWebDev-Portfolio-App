@@ -1,0 +1,11 @@
+@import "./../main.scss";
+
+.contacts{
+
+}
+.contacts__title{
+    @extend .title;
+}
+.contacts__description{
+    color: #ffffff;
+}

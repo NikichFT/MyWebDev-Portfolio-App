@@ -1,0 +1,14 @@
+.projects-title{
+    height: 15vh;
+    width: 100%;
+    font-family:'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,45 @@
+@mixin hover_block($bc){
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: $bc;
+}
+.project-block{
+    height: 300px;
+    width: 500px;
+    background-color: rebeccapurple;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px;
+    transition: 0.5s;
+    &:hover{
+        @include hover_block(#ffffff)
+    }
+}
+.project-block__title{
+    position: absolute;
+    font-family:'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: rgba(0, 255, 238, 0.897);
+    z-index: 999;
+    &:hover{
+        @include hover_block( rgb(0, 0, 0))
+    }
+}
+.project-img{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    transition: 0.5s;
+    &:hover{
+        @include hover_block(rgba(255, 255, 255, 0.438))
+    }
+}
+.project-img-alternate{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
