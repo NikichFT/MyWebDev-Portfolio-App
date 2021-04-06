@@ -37,16 +37,12 @@ const Main = (props) => {
     }, [props.headtitle]);
 
     const oneRef = useRef(null);
+    const logoRef = useRef();
 
     const scrollToComponent = () => {
         oneRef.current.scrollIntoView({behavior: 'smooth'})
 
     }
-    
-    // let arrow = document.querySelector('.arrow')
-    // window.addEventListener('wheel', function (){
-    //     if (arrow)  {setArrowState('hidden'); arrow.style.visibility = arrowState} 
-    // })
 
     return (
      <>
@@ -57,11 +53,11 @@ const Main = (props) => {
             <div className="main__title">Frontend-разработчик</div>
             <div className="main__high-area">
                 <div className="logo">
-                    <div className="main__logo">
+                    <div className="main__logo" ref={logoRef}>
                         <img className="telegram" src={telegram}></img>
                         <img className="whatsapp" src={whatsapp}></img>
                     </div>
-                    <img className="main__img" onMouseOver={() => document.querySelector('.main__logo').classList.add('hover')} onMouseLeave={() => document.querySelector('.main__logo').classList.remove('hover')} src={logo}/>
+                    <img className="main__img" onMouseOver={() => logoRef.current.classList.add('hover')} onMouseLeave={() => logoRef.current.classList.remove('hover')} src={logo}/>
                 </div>
                 <div className="main__description">Здравствуйте!<br></br>
     Меня зовут Никита, я frontend-разработчик. Ищу интересную работу, в которую смогу всецело погружаться и постоянно прогрессировать, используя актуальные технологии на данный момент.
@@ -88,8 +84,6 @@ const Main = (props) => {
         </div>
         <div className="main__arrow">
             <div className="arrow" style={{visibility: arrowState}} onClick={function() {
-                // props.changeHeadtitle('About');
-                document.querySelector('.arrow').style.visibility = "hidden";
                 setArrowState('hidden'); 
                 scrollToComponent()
         }}></div>

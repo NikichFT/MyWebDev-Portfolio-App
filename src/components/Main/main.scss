@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     opacity: 0;
-    height: 85vh;
+    height: 80vh;
 }
 .main__high-area{
     display: flex;
@@ -152,10 +152,15 @@
   }
   
   //adaptive
-@media screen and (max-width: 756px){
+@media screen and (max-width: 768px){
     .main__high-area {
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
+      height: 55vh;
+    }
+    .main__title{
+        height: 20vh;
     }
     .logo{
         margin: 0;
