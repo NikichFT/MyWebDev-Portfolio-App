@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/MyWebDev-Portfolio-App/static/css/main.1a18acc4.chunk.css",
+    "main.js": "/MyWebDev-Portfolio-App/static/js/main.a4f15677.chunk.js",
+    "main.js.map": "/MyWebDev-Portfolio-App/static/js/main.a4f15677.chunk.js.map",
+    "runtime-main.js": "/MyWebDev-Portfolio-App/static/js/runtime-main.97c44223.js",
+    "runtime-main.js.map": "/MyWebDev-Portfolio-App/static/js/runtime-main.97c44223.js.map",
+    "static/js/2.f5631166.chunk.js": "/MyWebDev-Portfolio-App/static/js/2.f5631166.chunk.js",
+    "static/js/2.f5631166.chunk.js.map": "/MyWebDev-Portfolio-App/static/js/2.f5631166.chunk.js.map",
+    "static/js/3.dcc43bf8.chunk.js": "/MyWebDev-Portfolio-App/static/js/3.dcc43bf8.chunk.js",
+    "static/js/3.dcc43bf8.chunk.js.map": "/MyWebDev-Portfolio-App/static/js/3.dcc43bf8.chunk.js.map",
+    "index.html": "/MyWebDev-Portfolio-App/index.html",
+    "static/css/main.1a18acc4.chunk.css.map": "/MyWebDev-Portfolio-App/static/css/main.1a18acc4.chunk.css.map",
+    "static/js/2.f5631166.chunk.js.LICENSE.txt": "/MyWebDev-Portfolio-App/static/js/2.f5631166.chunk.js.LICENSE.txt",
+    "static/media/logo_me.b85c0676.jpg": "/MyWebDev-Portfolio-App/static/media/logo_me.b85c0676.jpg",
+    "static/media/telegram.e84f44f6.png": "/MyWebDev-Portfolio-App/static/media/telegram.e84f44f6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97c44223.js",
+    "static/js/2.f5631166.chunk.js",
+    "static/css/main.1a18acc4.chunk.css",
+    "static/js/main.a4f15677.chunk.js"
+  ]
+}
